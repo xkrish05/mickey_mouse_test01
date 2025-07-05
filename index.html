@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Character Puzzle</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <div id="av-container">
+    <div id="av-wrapper">
+        <div id="scale">
+            <!-- Canvas element for rendering content -->
+
+            <h1>Match the Character</h1>
+
+            <div class="container">
+                <div id="image-pool">
+                <img src="Mickey Mouse.png" alt="Tom" class="character" draggable="true" data-name="Mickey">
+                <img src="Minnie Mouse.png" alt="Jerry" class="character" draggable="true" data-name="Minnie">
+                <img src="Donald Duck.png" alt="Bunny" class="character" draggable="true" data-name="Donald">
+                <img src="Goofy.png" alt="Bunny" class="character" draggable="true" data-name="Goofy">
+                <img src="Elsa (Frozen).png" alt="Bunny" class="character" draggable="true" data-name="Elsa">
+                </div>
+
+                <div id="puzzle-board">
+
+                <div class="slot" data-name="Goofy"><img src="Goofy.png"> Goofy</div>
+                <div class="slot" data-name="Elsa"><img src="Elsa (Frozen).png"> Elsa</div>
+                <div class="slot" data-name="Minnie"><img src="Minnie Mouse.png">Minnie</div>
+                <div class="slot" data-name="Mickey"><img src="Mickey Mouse.png">Mickey</div>
+                <div class="slot" data-name="Donald"><img src="Donald Duck.png">Donald</div>
+
+                
+
+                
+                </div>
+            </div>
+            <h2>Match the Character ➡️</h2>
+
+            <div id="feedback"></div>
+            <div id="completion-message"></div>
+
+            <!-- <canvas id="board"></canvas> -->
+        </div>
+    </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
